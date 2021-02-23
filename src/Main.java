@@ -26,7 +26,17 @@ public class Main {
             System.out.println("That is not a good number, 0/10");
         }
 
+        System.out.println("What is your favorite season?");
+        String season = IO.next();
+        season = IO.nextLine();
 
+        if (season.equalsIgnoreCase("fall") || season.equalsIgnoreCase("autumn")) {
+            System.out.println("Fall is the best season, 10/10");
+        } else if (season.equalsIgnoreCase("summer")) {
+            System.out.println("Summer is a close second, 9/10");
+        } else {
+            System.out.println("You didnt say fall or summer, and both winter or spring are equally ok, 5/10");
+        }
 
     }
 
