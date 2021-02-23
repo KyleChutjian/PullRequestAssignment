@@ -18,6 +18,7 @@ public class Main {
 
         System.out.println("Now, what is your favorite number?");
         int number = IO.nextInt();
+
         if (number == 7 || number == 11 || number == 25) {
             System.out.println(number + " is a great number, 10/10");
         } else if (number == 3 || number == 13 || number == 9) {
@@ -25,10 +26,8 @@ public class Main {
         } else {
             System.out.println("That is not a good number, 0/10");
         }
-
         System.out.println("What is your favorite season?");
-        String season = IO.next();
-        season = IO.nextLine();
+        String season = IO.nextLine();
 
         if (season.equalsIgnoreCase("fall") || season.equalsIgnoreCase("autumn")) {
             System.out.println("Fall is the best season, 10/10");
@@ -47,6 +46,14 @@ public class Main {
         } else {
             System.out.println("You probably said football, baseball, or a sport people dont watch, 3/10");
         }
+        System.out.println("Last question, did you like this program?");
+        String answer = IO.nextLine();
+        if (answer.equalsIgnoreCase("yes")) {
+            System.out.println("¯\\_(ツ)_/¯");
+        } else {
+            System.out.println("(╯°□°）╯︵ ┻━┻");
+        }
     }
+
 
 }
