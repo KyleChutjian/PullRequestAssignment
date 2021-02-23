@@ -16,6 +16,18 @@ public class Main {
             System.out.println("You need a new name, 0/10");
         }
 
+        System.out.println("Now, what is your favorite number?");
+        int number = IO.nextInt();
+        if (number == 7 || number == 11 || number == 25) {
+            System.out.println(number + " is a great number, 10/10");
+        } else if (number == 3 || number == 13 || number == 9) {
+            System.out.println(number + " is an okay number, 7/10");
+        } else {
+            System.out.println("That is not a good number, 0/10");
+        }
+
+
+
     }
 
 }
