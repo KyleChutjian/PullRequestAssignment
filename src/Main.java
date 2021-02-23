@@ -37,7 +37,16 @@ public class Main {
         } else {
             System.out.println("You didnt say fall or summer, and both winter or spring are equally ok, 5/10");
         }
+        System.out.println("What is your favorite sport to watch?");
+        String sport = IO.nextLine();
 
+        if (sport.equalsIgnoreCase("basketball")) {
+            System.out.println("Basketball is the obvious answer, 10/10");
+        } else if (sport.equalsIgnoreCase("hockey") || sport.equalsIgnoreCase("soccer")) {
+            System.out.println("I can see where you're coming from, 8/10");
+        } else {
+            System.out.println("You probably said football, baseball, or a sport people dont watch, 3/10");
+        }
     }
 
 }
